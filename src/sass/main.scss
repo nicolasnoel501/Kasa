@@ -1,0 +1,10 @@
+@import 'base'; 
+//components
+@import 'components/navbar.component';
+@import 'components/housingCard.component';
+@import 'components/footer.component';
+@import 'components/collapse.component';
+
+// pages
+@import 'pages/home.page';
+@import 'pages/not-found.page';
