@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Tag = () => {
+const Tag = ({title}) => {
 
   return (
-    <div>
-      <h2>Cozy</h2>
+    <div className='tag'>
+      <h2 className='tag__title'>{title}</h2>
     </div>
   )
 

@@ -1,82 +1,102 @@
 .main {
-
     padding: 20px;
     max-width: 1240px;
     width: 100%;
     margin: 0 auto;
 
-
     &__hero__container {
         position: relative;
         margin-bottom: 15px;
 
-        img {
-            max-width: 1240px;
-            height: 255px;
-            display: block;
-            margin: 0 auto;
-            width: 100%;
+
+    }
+}
+
+.main__city__container {
+    color: #FF6060;
+    line-height: 142.6%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__title1 {
+        font-size: 18px;
+        width: 80%;
+        font-weight: 500;
+    }
+
+    &__title2 {
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+
+.main__tag__container {
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.main__stars__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 20px;
+        
+    }
+
+
+
+    &__host {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media screen and (min-width: 768px){
+            text-align: left;
+            
         }
 
-        &__arrows {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            font-size: 24px;
-            transform: translateY(-50%);
-            padding: 0 10px;
-            color: white;
+        &__text {
+            //text-align: right;
 
-            i {
-                cursor: pointer;
+            >.first-name {
+                color: #FF6060;
+                font-size: 12px;
+            }
+
+            .last-name {
+                color: #FF6060;
+                font-size: 12px;
             }
         }
-    }
 
-    &__city__container {
-        color: #FF6060;
-        line-height: 142.6%;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-
-        &__title1 {
-            font-size: 18px;
-            width: 80%;
-            font-weight: 500;
-
-        }
-
-        &__title2 {
-            font-size: 14px;
-            color: black;
-            font-weight: 500;
-        }
-
-    }
-
-
-
-
-
-    &__tag__container {
-        /* Styles pour le conteneur des tags */
-    }
-
-    &__stars__container {
-        /* Styles pour le conteneur des étoiles */
-
-        .main__circle {
-            /* Styles pour le cercle */
+        &__img {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
         }
     }
+}
 
-    &__collapse {
-        /* Styles pour le conteneur des collapse */
+.main__collapse {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        gap: 76px;
+        flex-direction: row;
+        
     }
 }

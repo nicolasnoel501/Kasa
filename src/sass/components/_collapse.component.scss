@@ -43,6 +43,7 @@
 
         i {
             font-size: 32px;
+            cursor: pointer;
         }
     }
 
@@ -52,6 +53,12 @@
         padding: 20px;
         background: rgba(246, 246, 246, 0.45);
         border-radius: 0 0 5px 5px;
+        line-height: 146%;
+
+        ul,ol {
+            list-style: none;
+            padding-left: 0;
+        }
 
     }
 }
