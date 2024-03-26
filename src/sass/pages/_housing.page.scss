@@ -77,16 +77,25 @@
         }
 
         &__text {
-            //text-align: right;
+            text-align: right;
 
             >.first-name {
                 color: #FF6060;
                 font-size: 12px;
             }
+            @media screen and (min-width: 768px){
+                font-size: 18px;
+                
+            }
 
             .last-name {
                 color: #FF6060;
                 font-size: 12px;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+                
             }
         }
 
