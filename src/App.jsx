@@ -5,10 +5,11 @@ import Navbar from './components/Navbar.component';
 import Footer from './components/Footer.component';
 import About from './pages/About.page';
 import NotFound from './pages/NotFound.page';
+import Housing from './pages/Housing.page';
 
 // Data
 import data from './data/logements.json';
-import Housing from './pages/Housing.page';
+
 
 function App() {
   return (

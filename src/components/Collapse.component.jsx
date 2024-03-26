@@ -11,7 +11,7 @@ const Collapse = (props) => {
         <div className='collapse__container'>
             <header className='collapse__header' onClick={toggleCollapse}>
                 <h3>{props.title}</h3>
-                <i className={`fa-solid fa-angle-${isCollapsed ? 'down' : 'up'}`}></i>
+                <i className={`fa-solid fa-angle-${isCollapsed ? 'up' : 'down'}`}></i>
             </header>
             {!isCollapsed && (
                 <div className='collapse__text'>
