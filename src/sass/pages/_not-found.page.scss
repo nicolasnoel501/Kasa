@@ -48,6 +48,7 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: opacity 0.15s ease-in-out;
+        text-decoration: underline;
         
         
 
@@ -58,9 +59,7 @@
 
         }
 
-        :active {
-            text-decoration: underline;
-        }
+       
 
 
     }
