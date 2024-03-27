@@ -22,6 +22,10 @@ const Housing = () => {
     }
   }, [housing]);
 
+  if (!housing) {
+    return <NotFound />;
+  }
+
   const hostFullName = housing.host.name;
   const [firstName, lastName] = hostFullName.split(" ");
 
